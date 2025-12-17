@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aisultanova Nazym — Student Profile</title>
+<style>
+body { font-family: Arial, sans-serif; background:#f5f5f5; margin:0; padding:0; }
+header, main, footer { max-width:900px; margin:auto; padding:20px; }
+h1, h2 { margin:10px 0; }
+nav a { margin-right:10px; text-decoration:none; color:#2563eb; }
+nav a:hover { text-decoration:underline; }
+section { background:white; padding:20px; margin-bottom:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+ul { list-style: disc; padding-left:20px; }
+table { border-collapse: collapse; width:100%; }
+table, th, td { border:1px solid #ccc; padding:8px; text-align:left; }
+th { background:#eee; }
+button { margin:5px; padding:8px 12px; cursor:pointer; border-radius:5px; border:none; background:#2563eb; color:white; transition:0.3s;}
+button:hover { background:#1e40af; }
+.btn-exam { display:inline-block; margin-left:10px; padding:8px 15px; background:#2563eb; color:white; text-decoration:none; border-radius:5px; transition:0.3s;}
+.btn-exam:hover { background:#1e40af; }
+#exam-tasks button { display:block; margin-bottom:5px; width:100%; text-align:left; }
+</style>
+</head>
+<body>
+
+<header id="home">
+<h1>Aisultanova Nazym</h1>
+<p>Information Systems / Physics — Student</p>
+<p>Riga, Latvia</p>
+<nav>
+<a href="#about">About</a> |
+<a href="#skills">Skills</a> |
+<a href="#certs">Certificates</a> |
+<a href="#portfolio">Portfolio</a> |
+<a href="#contact">Contact</a> |
+<a href="#" class="btn-exam" onclick="showExamTasks()">Exam Task</a>
+</nav>
+</header>
+
+<main>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I am a <strong>student</strong> interested in <em>web development</em>, digital tools and modern technologies.</p>
+<a href="https://github.com/nazym-aisultanova" target="_blank">My GitHub Profile</a>
+</section>
+
+<section id="skills">
+<h2>My Skills</h2>
+<ul>
+<li>HTML5 (semantic structure)</li>
+<li>CSS3 (Flexbox, Grid basics)</li>
+<li>Responsive design</li>
+<li>JavaScript basics</li>
+<li>Git & GitHub</li>
+</ul>
+</section>
+
+<section id="certs">
+<h2>Certificates & Presentation</h2>
+<table>
+<caption>My Certificates</caption>
+<thead>
+<tr><th>Title</th><th>Platform</th><th>Year</th><th>File</th></tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Web Development Basics</td>
+<td>Coursera</td>
+<td>2025</td>
+<td><a href="files/certificate1.pdf" target="_blank">Open PDF</a> | <a href="files/certificate1.pdf" download>Download</a></td>
+</tr>
+<tr><td colspan="3">This row shows rowspan and colspan usage.</td></tr>
+<tr><td>HTML & CSS Course</td><td>Online Platform</td><td>2025</td><td><a href="files/certificate2.pdf" target="_blank">Open PDF</a></td></tr>
+<tr><td>Final Presentation</td><td>University</td><td>2025</td><td><a href="files/presentation.pdf" target="_blank">Open PDF</a></td></tr>
+</tbody>
+</table>
+<h3>Embedded Presentation</h3>
+<iframe src="files/presentation.pdf" width="100%" height="400"></iframe>
+</section>
+
+<section id="portfolio">
+<h2>Portfolio</h2>
+<figure>
+<img src="images/project1.jpg" alt="Study assistant project screenshot" width="300">
+<figcaption>Study Assistant Mini Project</figcaption>
+</figure>
+<figure>
+<img src="images/project2.jpg" alt="Personal CV website screenshot" width="300">
+<figcaption>Personal CV Website</figcaption>
+</figure>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<form>
+<label>Name:<input type="text" required></label><br><br>
+<label>Email:<input type="email" required></label><br><br>
+<label>Message:<br><textarea rows="5" required></textarea></label><br><br>
+<button type="submit">Send</button>
+</form>
+</section>
+
+<!-- Exam Tasks Section -->
+<section id="exam-tasks" style="display:none;">
+<h2>Exam Tasks</h2>
+<!-- 30 Tasks buttons -->
+<button onclick="task1()">1. Reverse words</button>
+<button onclick="task2()">2. First & Last character</button>
+<button onclick="task3()">3. Longest word</button>
+<button onclick="task4()">4. Title Case</button>
+<button onclick="task5()">5. Replace word</button>
+<button onclick="task6()">6. Count vowels</button>
+<button onclick="task7()">7. Create array</button>
+<button onclick="task8()">8. Show third array element</button>
+<button onclick="task9()">9. Last array element</button>
+<button onclick="task10()">10. Find index in array</button>
+<button onclick="task11()">11. Map square</button>
+<button onclick="task12()">12. Sort array</button>
+<button onclick="task13()">13. Splice replace</button>
+<button onclick="task14()">14. Splice remove+insert</button>
+<button onclick="task15()">15. Arithmetic function</button>
+<button onclick="task16()">16. Factorial</button>
+<button onclick="task17()">17. Even/Odd</button>
+<button onclick="task18()">18. Max of 3 numbers</button>
+<button onclick="task19()">19. Sum array</button>
+<button onclick="task20()">20. Only 10 digits</button>
+<button onclick="task21()">21. Check number/string</button>
+<button onclick="task22()">22. Password min length</button>
+<button onclick="task23()">23. Required field</button>
+<button onclick="task24()">24. Signup form</button>
+<button onclick="task25()">25. Show form data table</button>
+<button onclick="task26()">26. Reset form result</button>
+<button onclick="task27()">27. Create Person object</button>
+<button onclick="task28()">28. Update & show object</button>
+<button onclick="task29()">29. Countdown timer</button>
+<button onclick="task30()">30. Button hover style</button>
+</section>
+
+<footer>
+<p><strong>Aisultanova Nazym</strong></p>
+<p>© <span id="year"></span></p>
+</footer>
+
+<script>
+// Footer year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Show Exam Tasks
+function showExamTasks() {
+  const section = document.getElementById("exam-tasks");
+  section.style.display = "block";
+  section.scrollIntoView({behavior:"smooth"});
+}
+
+// 30 Tasks JS
+function task1(){ let s=prompt("Enter sentence:"); alert(s.split(" ").reverse().join(" ")); }
+function task2(){ let s=prompt("Enter string:"); alert("First: "+s[0]+", Last: "+s[s.length-1]); }
+function task3(){ let s=prompt("Enter sentence:"); alert(s.split(" ").reduce((a,b)=>b.length>a.length?b:a,"")); }
+function task4(){ let s=prompt("Enter sentence:"); alert(s.split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" ")); }
+function task5(){ let s=prompt("Enter sentence:"); let oldW=prompt("Word to replace:"); let newW=prompt("New word:"); alert(s.replace(oldW,newW)); }
+function task6(){ let s=prompt("Enter string:"); let count=0; "aeiouAEIOU".split("").forEach(v=>{if(s.includes(v)) count+=s.split("").filter(c=>c===v).length}); alert("Vowels: "+count); }
+function task7(){ let s=prompt("Enter values comma separated:"); alert(s.split(",")); }
+function task8(){ let s=prompt("Enter values comma separated:"); let arr=s.split(","); alert("Third element: "+arr[2]); }
+function task9(){ let s=prompt("Enter values comma separated:"); let arr=s.split(","); alert("Last element: "+arr[arr.length-1]); }
+function task10(){ let s=prompt("Enter values comma separated:"); let arr=s.split(","); let e=prompt("Element to find index:"); alert("Index: "+arr.indexOf(e)); }
+function task11(){ let arr=[1,2,3,4]; alert(arr.map(x=>x*x)); }
+function task12(){ let arr=[3,1,5,2]; alert(arr.sort((a,b)=>a-b)); }
+function task13(){ let arr=[1,2,3,4]; arr.splice(1,2,9,8); alert(arr); }
+function task14(){ let arr=[1,2,3,4]; arr.splice(1,2,5); alert(arr); }
+function task15(){ let a=Number(prompt("a:")); let b=Number(prompt("b:")); let op=prompt("+, -, , /"); let res; switch(op){case "+":res=a+b;break;case "-":res=a-b;break;case "":res=a*b;break;case "/":res=a/b;break;default:res="Invalid";} alert(res); }
+function task16(){ let n=Number(prompt("Enter number:")); let f=1; for(let i=1;i<=n;i++)f*=i; alert(f); }
+function task17(){ let n=Number(prompt("Enter number:")); alert(n%2===0?"Even":"Odd"); }
+function task18(){ let a=Number(prompt("a:")); let b=Number(prompt("b:")); let c=Number(prompt("c:")); alert(Math.max(a,b,c)); }
+function task19(){ let s=prompt("Enter numbers comma separated:"); let arr=s.split(",").map(Number); alert(arr.reduce((a,b)=>a+b,0)); }
+function task20(){ let s=prompt("Enter 10 digits:"); alert(/^\d{10}$/.test(s)?"Valid":"Invalid"); }
+function task21(){ let s=prompt("Enter value:"); alert(isNaN(s)?"String":"Number"); }
+function task22(){ let s=prompt("Enter password:"); alert(s.length>=6?"Valid":"Too short"); }
+function task23(){ let s=prompt("Enter value:"); alert(s? "OK":"Required field"); }
+function task24(){ let n=prompt("Name:"); let e=prompt("Email:"); alert(Name: ${n}\nEmail: ${e}); }
+function task25(){ let n=prompt("Name:"); let e=prompt("Email:"); alert(<table><tr><td>${n}</td><td>${e}</td></tr></table>); }
+function task26(){ alert("Result cleared."); }
+function task27(){ let person={name:"Nazym",age:21}; alert(JSON.stringify(person)); }
+function task28(){ let person={name:"Nazym",age:21}; let newAge=prompt("New age:"); person.age=newAge; alert(JSON.stringify(person)); }
+function task29(){ let count=5; let timer=setInterval(()=>{ console.log(count); count--; if(count<0) clearInterval(timer); },1000); alert("Timer started, check console"); }
+function task30(){ alert("Hover effect is visible on buttons."); }
+</script>
+
+</body>
+</html>
